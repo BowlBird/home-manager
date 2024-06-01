@@ -1,3 +1,3 @@
 .PHONY: update
 update: 
-	home-manager switch --flake bowlbird 
+	home-manager switch --flake .#bowlbird 
