@@ -10,7 +10,12 @@
 
   # User packages 
   home.packages = with pkgs; [
-    hello zsh oh-my-zsh git zsh-autosuggestions fzf
+    hello 
+    zsh 
+    oh-my-zsh 
+    git 
+    zsh-autosuggestions 
+    fzf
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -56,7 +61,13 @@
   # Let Home Manager install and manage itself.
   programs = {
     home-manager.enable = true;
-    
+
+    git = {
+      enable = true;
+      userName = "BowlBird";
+      userEmail = "bowlbirdcontact@gmail.com";
+    };
+
     zsh = {
       enable = true;
       enableCompletion = true;
